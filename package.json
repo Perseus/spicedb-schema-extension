@@ -1,0 +1,25 @@
+{
+  "name": "spicedb-schema",
+  "displayName": "SpiceDB Schema",
+  "description": "Syntax highlighting for SpiceDB Schemas",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "spicedb-schema",
+      "aliases": ["SpiceDB Schema", "spicedb-schema"],
+      "extensions": [".spicedb"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "spicedb-schema",
+      "scopeName": "source.spicedb",
+      "path": "./syntaxes/spicedb-schema.tmLanguage.json"
+    }]
+  }
+}
